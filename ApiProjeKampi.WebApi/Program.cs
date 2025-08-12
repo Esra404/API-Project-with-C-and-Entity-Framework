@@ -13,8 +13,10 @@ builder.Services.AddDbContext<ApiContext>();
 
 
 
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
+
+
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
 
 builder.Services.AddScoped<IValidator<Product>,ProductValidator > ();

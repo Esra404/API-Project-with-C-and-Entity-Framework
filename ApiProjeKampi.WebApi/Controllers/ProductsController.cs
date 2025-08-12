@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ApiProjeKampi.WebApi.Controllers
 {
-
+  
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -19,7 +19,13 @@ namespace ApiProjeKampi.WebApi.Controllers
         private readonly ApiContext _context;
         private readonly IMapper _mapper;
 
-     
+        public ProductsController(IValidator<Product> validator, ApiContext context, IMapper mapper)
+        {
+            _validator = validator;
+            _context = context;
+            _mapper = mapper;
+        }
+
         [HttpGet]
         public IActionResult ProductList()
         {

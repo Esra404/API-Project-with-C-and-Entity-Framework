@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ApiProjeKampi.WebUI.Views.Shared.Components
+namespace ApiProjeKampi.WebUI.ViewComponents
 {
     public class _NavbarDefaultComponentDefault : ViewComponent
     {
