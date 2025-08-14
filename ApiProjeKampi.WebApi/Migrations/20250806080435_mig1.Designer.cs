@@ -289,10 +289,10 @@ namespace ApiProjeKampi.WebApi.Migrations
 
                     b.HasKey("ServiceId");
 
-                    b.ToTable("Services");
+                    b.ToTable("Service");
                 });
 
-            modelBuilder.Entity("ApiProjeKampi.WebApi.Entities.Testimonial", b =>
+            modelBuilder.Entity("ApiProjeKampi.WebApi.Entities.Service", b =>
                 {
                     b.Property<int>("TestimonialId")
                         .ValueGeneratedOnAdd()
@@ -318,7 +318,7 @@ namespace ApiProjeKampi.WebApi.Migrations
 
                     b.HasKey("TestimonialId");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Service");
                 });
 #pragma warning restore 612, 618
         }

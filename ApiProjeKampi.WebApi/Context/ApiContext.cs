@@ -9,6 +9,7 @@ namespace ApiProjeKampi.WebApi.Context
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-3EGQEDU\\SQLEXPRESS;initial catalog=ApiYummyDb;integrated security=true;");
 
+           // optionsBuilder.UseSqlServer("Server=DESKTOP-3EGQEDU\\SQLEXPRESS;initial catalog=ApiYummyDb;integrated security=true;");
 
         }
         public DbSet<Category> Categories { get; set; }
@@ -21,9 +22,9 @@ namespace ApiProjeKampi.WebApi.Context
         public DbSet<Rezervation> Rezervations { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<YummyEvent> YummyEvents { get; set; }
 
 
 
-
-    }
+}
 }

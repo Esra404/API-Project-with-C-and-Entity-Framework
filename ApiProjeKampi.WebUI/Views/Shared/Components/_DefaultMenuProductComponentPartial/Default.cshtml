@@ -5,10 +5,13 @@
 
         <div class="tab-header text-center">
             <p>Menü</p>
-            <h3>Tüm ---Lezzetler</h3>
+            <h3>Tüm Lezzetler</h3>
         </div>
 
         <div class="row gy-5">
+
+        @if (Model != null && Model.Any())
+{
             @foreach(var item in Model){
 
 
@@ -27,7 +30,9 @@
             }
 
 
-         
+         }else{
+
+         }
 
         </div>
     </div><!-- End Starter Menu Content -->

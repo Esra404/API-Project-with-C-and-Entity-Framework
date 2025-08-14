@@ -142,7 +142,7 @@ namespace ApiProjeKampi.WebApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Services",
+                name: "Service",
                 columns: table => new
                 {
                     ServiceId = table.Column<int>(type: "int", nullable: false)
@@ -157,7 +157,7 @@ namespace ApiProjeKampi.WebApi.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Testimonials",
+                name: "Service",
                 columns: table => new
                 {
                     TestimonialId = table.Column<int>(type: "int", nullable: false)
@@ -200,10 +200,10 @@ namespace ApiProjeKampi.WebApi.Migrations
                 name: "Rezervations");
 
             migrationBuilder.DropTable(
-                name: "Services");
+                name: "Service");
 
             migrationBuilder.DropTable(
-                name: "Testimonials");
+                name: "Service");
         }
     }
 }

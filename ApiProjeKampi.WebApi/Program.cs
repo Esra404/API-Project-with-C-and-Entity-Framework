@@ -7,7 +7,7 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add Service to the container.
 builder.Services.AddDbContext<ApiContext>();
 
 
